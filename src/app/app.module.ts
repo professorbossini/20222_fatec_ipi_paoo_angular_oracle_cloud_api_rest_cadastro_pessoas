@@ -1,10 +1,12 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ButtonModule } from 'primeng/button';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+
 import { AppComponent } from './app.component';
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
 
-import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { ButtonModule } from 'primeng/button';
   imports: [
     BrowserModule,
     ButtonModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
