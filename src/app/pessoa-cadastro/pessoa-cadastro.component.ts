@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'pessoa-cadastro',
@@ -7,8 +8,8 @@ import { Component } from '@angular/core';
 })
 export class PessoaCadastroComponent {
 
-  cadastrar(): void {
-    console.log("Cadastrando..")
+  cadastrar(meuForm: NgForm): void {
+    console.log(meuForm)
   }
 
 }
